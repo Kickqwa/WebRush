@@ -1,0 +1,441 @@
+
+
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/ProximaNova/ProximaNova-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/ProximaNova/ProximaNova-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/ProximaNova/ProximaNova-Light.ttf);
+    font-weight: 400;
+}
+
+.btn-default-dark {
+    background: linear-gradient(74deg, #383838, #000000);
+    color: white;
+    border-color: transparent;
+}
+
+
+.btn-default-light {
+    color: black;
+    background: linear-gradient(74deg, #d3eacf, #f4f4f4);
+    border-color: #333;
+}
+
+.btn-default {
+    padding: 16px 52px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(74deg, #49007c, #e70088);
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+    width: 100%;
+}
+
+.block1 {
+    background: url(../image/Layer\ 10.png);
+    min-height: 100vh; /*vh - проценты от экрана*/
+    background-size: cover; /*так картинка не расстягивается*/
+} 
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.logo h2 {    
+    font-family: "ProximaNova";
+}
+
+.logo h2 span {  /*h2 уточнаят, что мы имеем дело к SPANам в logo в h2*/
+    font-weight: normal;  
+
+    font-family: "ProximaNova";
+    font-weight: 400;
+}
+
+.block1 ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.block1 li {
+    border: 1px solid transparent;
+    border-radius: 18px;
+    padding: 10px 16px;
+    transition: border-color 0.5s;  
+
+    font-family: "ProximaNova";
+    font-weight: 500;
+}
+
+
+.block1 .middle {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 190px;
+    
+    
+    
+    font-family: "ProximaNova";
+    font-weight: 500;
+}
+
+.middle h1 {    
+    font-family: "ProximaNova";
+}
+
+
+
+
+
+
+.block2 {
+    background: url(../image/Layer\ 8.png);
+    background-size: cover; /*так картинка не расстягивается*/
+    background-position: left;
+}
+
+.block2 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best {
+    max-width: 575px;
+    width: 100%;
+    color: white;
+    display: inline-block;    
+    padding: 150px 0;    
+    
+    font-family: "ProximaNova";
+    font-weight: 400;
+}
+
+.best h1 {
+    font-size: 48;
+    
+    font-family: "ProximaNova";
+}
+
+.best span {
+    font-weight: normal;
+}
+
+.best p {
+    padding-top: 30px;
+    padding-bottom: 44px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.block3 .container {
+    font-family: "ProximaNova";
+    font-weight: 400;
+    text-align: center;
+}
+
+.block3 h1 {
+    font-family: "ProximaNova";
+    padding-top: 100px;
+    padding-bottom: 57px;
+}
+
+.block3 section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3 section article {
+    display: flex;
+    align-items: flex-start; 
+    max-width: 588px;
+    width: 100%;  
+    padding: 40px 0;
+}
+
+.block3 article div {
+    flex-direction: column;
+    text-align: left;
+}
+
+.block3 .img_cont {
+    max-width: 136px;
+    width: 100%; 
+    padding: 10px 20px;
+}
+
+.block3 .text_cont {
+    max-width: 420px;
+    width: 100%;
+}
+
+.block3 section div p {
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 28px;    
+}
+
+.block3 button {   
+    margin-top: 40px; 
+    margin-bottom: 106px;
+} 
+
+/*--------------------------------*/
+
+
+.slider {   
+    position: relative;    
+}
+
+.slider-items {    
+    position: relative; 
+    width: 100%; 
+    display: flex;
+    overflow: hidden;
+}
+
+.item {
+    position: relative;
+    min-width: 33.3%;
+    left: 0;
+    width: 100%;
+    min-height: 485px;
+    /* left: -33%; */
+}
+
+.item1 {
+    background: url(../image/slider1.png) center no-repeat;
+    background-size: cover;        
+}
+
+.item2 {
+    background: url(../image/slider2.png) center no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    background: url(../image/slider3.png) center no-repeat;
+    background-size: cover;
+}
+
+.item-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.63);
+    opacity: 0;
+
+    transition: 0.25s;
+}
+
+.item-description:hover {
+    opacity: 1;
+}
+
+.item-description h3 {
+    font-size: 30px;
+    font-family: "ProximaNova";
+}
+
+.item-description p {
+    text-align: center;
+    line-height: 24px;
+    font-family: "ProximaNova";
+    font-weight: 400;
+    padding: 10px 0 50px 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+.lbut,
+.rbut {
+    position: absolute;
+    top: calc(50% - 28px); 
+    background-color: #fff;    
+    height: 58px;
+    width: 58px;
+}
+
+.lbut {
+    left: 0;
+}
+
+.rbut {
+    right: 0;
+}
+
+
+/* -------------------------------- */
+
+.block5 {
+    background: url(../image/Layer15.png);
+    background-size: cover;
+}
+
+.block5 .container {
+    text-align: center;  
+    font-family: "ProximaNova";
+    font-weight: 400;  
+    color: #fff;
+}
+
+.block5 h2 {
+    font-family: "ProximaNova";
+    padding: 80px 0 20px 0;
+    font-size: 48px;
+}
+
+.block5 p{
+    max-width: 576px;
+    width: 100%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    line-height: 24px;
+    color: #949494;
+}
+
+.block5 .middle {
+    font-family: "ProximaNova";
+    font-weight: 400;  
+    display: flex;
+    justify-content: space-around;    
+}
+
+.block5 .person {
+    max-width: 220px;
+    width: 100%;
+}
+
+.block5 .person h3{
+    padding: 17px 0 20px 0;
+}
+
+.block5 button {
+    font-family: "ProximaNova";
+    font-weight: 500; 
+    margin-bottom: 120px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+.bottom {
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {    
+    max-width: 90%;
+}
+
+.block1 .container {
+    max-width: 100%;
+}
+
+.block1 .logo {
+    margin-bottom: 20px;
+}
+
+.block1 ul {
+    flex-direction: column;
+
+}
+
+.block1 .middle {
+    text-align: center;
+    padding-bottom: 30px;    
+    margin-top: 30px;
+}
+
+.block1 .middle p,
+.block1 .middle h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+
+
+
+.block2 .container,
+.block3 section {
+    flex-direction: column;
+}
+
+.best {
+    padding: 50px 0;
+}
+
+.block3 h1 {    
+    padding-top: 50px;
+    padding-bottom: 15px;
+    
+}
+
+.block3 section article {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.block3 article div,
+.block3 {
+    text-align: center;
+}
+
+.block3 button {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.block3 .img_cont {
+    min-width: 100%;
+    padding: 0;
+}
+
+.block5 .middle {
+    flex-direction: column;
+    align-items: center;
+}
+
+.block5 p,
+.block5 button {
+    margin-bottom: 40px;
+}
+
+.item {
+    min-width: 100%;
+}
+
+}
